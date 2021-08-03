@@ -27,9 +27,7 @@ export const Post = ({ body, title, id }: PostProps): JSX.Element => {
       <Body>{body}</Body>
       {id && (
         <Link href={'/posts/' + id}>
-          <a>
             <Button>К посту</Button>
-          </a>
         </Link>
       )}
     </Container>
