@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Link from 'next/link'
 import { Button } from '../Button/Button'
 import { Input } from '../Input/Input'
 
@@ -39,6 +40,7 @@ export const AddPost = (): JSX.Element => {
         onChange={(e) => setBody(e.currentTarget.value)}
       />
       <Button onClick={clickHandler}>Создать</Button>
+      <Link href="/"><Button onClick={clickHandler}>Вернуться</Button></Link>
     </Container>
   )
 }
