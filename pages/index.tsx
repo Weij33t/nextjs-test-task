@@ -12,7 +12,7 @@ export default function Home(): JSX.Element {
     <div>
       <Head>
         <title>Test Task</title>
-        <meta name="description" content="Developers Today" />
+        <meta name="description" content="Develops Today" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Posts />
