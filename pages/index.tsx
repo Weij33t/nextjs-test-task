@@ -20,7 +20,7 @@ export default function Home(): JSX.Element {
   )
 }
 export const getStaticProps: GetStaticProps = async () => {
-  const data = await axios.get(process.env.NEXT_PUBLIC_API_DOMAIN + '/posts')
+  const data = await axios.get('https://simple-blog-api.crew.red/posts')
   const posts = data.data
   const reduxStore = initializeStore(posts)
   const { dispatch } = reduxStore
