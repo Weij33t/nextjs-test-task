@@ -24,6 +24,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const posts = data.data
   const reduxStore = initializeStore(posts)
   const { dispatch } = reduxStore
+  console.log(data)
   dispatch({ type: PostsActions.GET_POSTS_SUCCESS, payload: posts })
 
   return {
